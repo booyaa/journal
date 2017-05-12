@@ -10,6 +10,10 @@ This is identical to Linux/OSX redirection.
 
 ## List active/open connections in Oracle
 
+<details>
+
+<summary>click to see sql</summary>
+
 ```sqlpl
 SET LINESIZE 200
 COL pid FORMAT a9
@@ -39,6 +43,8 @@ AND
     type = 'USER'
 ORDER BY spid;
 ```
+
+</details>
 
 ## XML node() vs. text()
 
@@ -70,10 +76,39 @@ for _,v in pairs(items) do
 end
 ```
 
-## Rounding to midnight
+## Rounding to midnight (SQL Server)
 
 ```sql
 SELECT getdate() AS now
 	,cast(getdate() - 6 AS DATE) AS sql2008
 	,dateadd(day, datediff(Day, 0, getdate() - 6), 0) AS sql2005
 ```
+
+## Get AD logon in Oracle
+
+```sql
+SELECT
+    sys_context('userenv','os_user')
+FROM
+    dual;
+```
+
+## Virtual columns
+
+To quote [ORACLEBASE](https://oracle-base.com/articles/11g/virtual-columns-11gr1):
+
+> When queried, virtual columns appear to be normal table columns, but their values are derived rather than being stored on disc.
+
+Syntax
+
+```sql
+column_name [datatype] [GENERATED ALWAYS] AS (expression) [VIRTUAL]
+```
+
+## Test for GitHub
+
+ <details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details> 
