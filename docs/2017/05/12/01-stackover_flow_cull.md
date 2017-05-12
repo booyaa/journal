@@ -105,10 +105,20 @@ Syntax
 column_name [datatype] [GENERATED ALWAYS] AS (expression) [VIRTUAL]
 ```
 
-## Test for GitHub
+## Collapsible sections in SQL
 
- <details>
-  <summary>Copyright 1999-2014.</summary>
-  <p> - by Refsnes Data. All Rights Reserved.</p>
-  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+### Demo
+
+<details>
+  <summary>Works great in GitHub!</summary>
+  <p>Dipshit with a nine-toed woman. Dolor sit amet, consectetur adipiscing elit praesent ac magna. You don’t go out and make a living dressed like that in the middle of a weekday. Justo pellentesque ac lectus quis. Yeah. Roadie for Metallica. Speed of Sound Tour. Elit blandit fringilla a ut turpis praesent felis. Keep your ugly fucking goldbricking ass out of my beach community! Ligula, malesuada suscipit malesuada non, ultrices non urna sed orci ipsum, placerat id.</p>
 </details> 
+
+### Code 
+
+```html
+<details>
+  <summary>Click to expand...</summary>
+  <p>Imagine this is the entire text of War and Peace.</p>
+</details> 
+```
