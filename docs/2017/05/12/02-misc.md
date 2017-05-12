@@ -40,3 +40,11 @@ column_name [datatype] [GENERATED ALWAYS] AS (expression) [VIRTUAL]
   <p>Imagine this is the entire text of War and Peace.</p>
 </details> 
 ```
+
+## Toggling hidden files in Finder (OSX)
+
+If you search for how to do this, you get a lot of nonsense involving messing with `defaults write` and horrific applescript bodges.
+
+`CMD` + `SHIFT` + `.`
+
+That's command key, shift and full stop (period) pressed at the same time.
